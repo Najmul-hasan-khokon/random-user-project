@@ -4,6 +4,7 @@ const User = ({ user, addUserHandler }) => {
   const { picture, name, phone } = user; // destructure from user.
   const [showNumber, setShowNumber] = useState(""); // number hide and show.
 
+  // hide and show number logic.
   const showNumberHandler = () => {
     if (showNumber) {
       setShowNumber("");
